@@ -1,0 +1,24 @@
+body {
+    font-family: 'Rock Salt', cursive;
+    font-size: medium;
+}
+button {
+    padding: 20px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+.clicked-btn {
+    background: linear-gradient(#e66465, #9198e5);
+    color: #fff;
+    font-size: larger;
+    border-radius: 5px;
+    padding: 20px;
+    width: 150px;
+    border-color: seashell;
+}
+
+div {
+    margin: 0 auto;
+    width: 60%;
+}
