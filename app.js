@@ -29,12 +29,12 @@ function handleClick(event) {
         changeStyle(userClicked.dataset.number);
         disableBtn();
     } else if (userClicked.dataset.number == 3) {
-        userClicked.innerText = 'You got Bibs!'
+        userClicked.innerText = 'You got Jave!'
 
         userClicked.className = 'clicked-btn'
         disableBtn();
     } else if (userClicked.dataset.number == 5) {
-        userClicked.innerText = 'You got Jave!'
+        userClicked.innerText = 'You got Bibs!'
 
         userClicked.className = 'clicked-btn'
         disableBtn();
