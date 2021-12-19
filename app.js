@@ -1,7 +1,10 @@
 console.log('kris kringle');
 
 var buttons = document.querySelectorAll('button');
+var players = ['jave', 'nicole', 'bibs', 'deo', 'april']
 var userClicked;
+
+var randIdx = Math.floor(Math.random() * players.length);
 
 function disableBtn() {
     for (let i = 0; i < buttons.length; i++) {
@@ -18,23 +21,23 @@ function handleClick(event) {
 
     // userClicked.style.backgroundColor = 'red'
 
-    if (userClicked.dataset.number == 4) {
+    if (userClicked.dataset.number == 1) {
         userClicked.innerText = 'You got Deo!'
 
         userClicked.className = 'clicked-btn'
         disableBtn();
     } else if (userClicked.dataset.number == 2) {
-        userClicked.innerText = 'You got April!'
+        userClicked.innerText = 'You got Bibs!'
 
         changeStyle(userClicked.dataset.number);
         disableBtn();
     } else if (userClicked.dataset.number == 3) {
-        userClicked.innerText = 'You got Jave!'
+        userClicked.innerText = 'You got April!'
 
         userClicked.className = 'clicked-btn'
         disableBtn();
-    } else if (userClicked.dataset.number == 5) {
-        userClicked.innerText = 'You got Bibs!'
+    } else if (userClicked.dataset.number == 4) {
+        userClicked.innerText = 'You got Jave!'
 
         userClicked.className = 'clicked-btn'
         disableBtn();
